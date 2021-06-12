@@ -1,8 +1,6 @@
 ### Sentiment Analysis using VADER
 
-
-
-
+<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/main.png" style="zoom:50%;" />
 
 #### Introduction
 
@@ -116,7 +114,7 @@ df['score'][0]
 
 > {'neg': 0.0, 'neu': 0.653, 'pos': 0.347, 'compound': 0.9565}
 
-<img src="/Users/boula/Library/Mobile Documents/com~apple~CloudDocs/Screenshots/Screen Shot 2021-06-12 at 1.30.55 PM.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/score.png" style="zoom:50%;" />
 
 ```python
 df['negative'] = df['score'].apply(lambda txt: txt['neg'])
@@ -134,7 +132,7 @@ df['positive'] = df['score'].apply(lambda txt: txt['pos'])
 df['compound'] = df['score'].apply(lambda txt: txt['compound'])
 ```
 
-<img src="/Users/boula/Library/Mobile Documents/com~apple~CloudDocs/Screenshots/Screen Shot 2021-06-12 at 1.35.26 PM.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/compound.png" style="zoom:50%;" />
 
 We create a function called "polarity_score" to calculate the accuracy test for each review in our dataframe. finally we apply the function by  creating a new column called "sentiment" . the reviews in this column will be classified into positive, negative and neutral.
 
@@ -153,7 +151,7 @@ df['sentiment'] = df['compound'].apply(lambda val: polarity_score(val))
 df.head()
 ```
 
-<img src="/Users/boula/Library/Mobile Documents/com~apple~CloudDocs/Screenshots/Screen Shot 2021-06-12 at 1.46.29 PM.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/sentiment.png" style="zoom:50%;" />
 
 ```python
 df['sentiment'].value_counts()
@@ -176,4 +174,4 @@ VADER classifies the sentiments very well. It is easy to use, the ready-made mod
 
 Thanks for reading and happy web scraping everyone!
 
-You can find my Jupyter Notebook for this on my [Github](https://github.com/akladyous/sentiment-analysis-using-vader).
+You can find my Jupyter Notebook for this on my [github](https://github.com/akladyous/sentiment-analysis-using-vader).
