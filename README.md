@@ -1,6 +1,6 @@
 ### Sentiment Analysis using VADER
 
-<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/main.png" style="zoom:50%;" />
+![main](/Users/boula/Documents/GitHub/Public/sentiment-analysis-using-vader/img/main.png)
 
 #### Introduction
 
@@ -114,7 +114,7 @@ df['score'][0]
 
 > {'neg': 0.0, 'neu': 0.653, 'pos': 0.347, 'compound': 0.9565}
 
-<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/score.png" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/akladyous/sentiment-analysis-using-vader/main/img/score.png" style="zoom:50%;"/>
 
 ```python
 df['negative'] = df['score'].apply(lambda txt: txt['neg'])
