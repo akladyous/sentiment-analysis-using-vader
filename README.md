@@ -1,7 +1,5 @@
 ### Sentiment Analysis using VADER
 
-![main](/Users/boula/Documents/GitHub/Public/sentiment-analysis-using-vader/img/main.png)
-
 #### Introduction
 
 Sentiment Analysis is a supervised Machine Learning technique used to determine if a chunk of text is positive, negative or neutral. In text analytics, natural language processing (NLP) and machine learning (ML) techniques are combined to assign sentiment scores to the topics, categories or entities within a phrase.
